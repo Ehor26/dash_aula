@@ -18,7 +18,7 @@ app = dash.Dash(external_stylesheets=[dbc.themes.MINTY])
 server = app.server
 
 
-df_data = pd.read_csv(r"C:\Users\eh_or\Documents\CURSO\ASIMOV\3. Dashboards Interativos com Python\Projetos\Dashboards\DashSalesAnalyzer\projeto_completo\supermarket_sales.csv")
+df_data = pd.read_csv("supermarket_sales.csv")
 df_data["Date"] = pd.to_datetime(df_data["Date"])
 
 
